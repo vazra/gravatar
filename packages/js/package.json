@@ -22,6 +22,18 @@
     "rebuild": "electron-rebuild -f -w better-sqlite3 -v 9.0.5",
     "push": "yarn build && yalc push"
   },
+  "keywords": [
+    "gravatar",
+    "email",
+    "avatar",
+    "typescript",
+    "electron",
+    "browser",
+    "profile",
+    "image",
+    "picture",
+    "photo"
+  ],
   "files": [
     "lib"
   ],
@@ -41,9 +53,8 @@
     "type": "git",
     "url": "git+https://github.com/vazra/gravatar.git"
   },
-  "keywords": [],
   "author": "Vazra",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vazra/gravatar/issues"
   },
