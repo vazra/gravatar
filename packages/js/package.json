@@ -1,7 +1,7 @@
 {
   "name": "@gravatar/js",
   "private": false,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Typescript friendly, email to gravatar generator which works seamlesly in Node, Browser and in Electron",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
