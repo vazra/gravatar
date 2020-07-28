@@ -1,0 +1,28 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Common components",
+  "keywords": [],
+  "author": "Ameen Rashad <ameenrashad@hotmail.com>",
+  "license": "ISC",
+  "main": "src/common.js",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vazra/gravatar.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/vazra/gravatar/issues"
+  },
+  "homepage": "https://github.com/vazra/gravatar#readme"
+}
