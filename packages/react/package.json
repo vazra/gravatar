@@ -1,0 +1,60 @@
+{
+  "name": "@gravatar/react",
+  "version": "1.0.0",
+  "private": false,
+  "description": "React Component ",
+  "main": "lib/cjs/index.js",
+  "module": "lib/es/index.js",
+  "jsnext:main": "lib/es/index.js",
+  "scripts": {
+    "watch": "yarn clean && tsc -p tsconfig.json -w & tsc -p tsconfig-cjs.json -w",
+    "build": "yarn clean && tsc -p tsconfig.json & tsc -p tsconfig-cjs.json",
+    "format": "prettier --write \"src/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --coverage",
+    "kkprepublishOnly": "yarn test && yarn lint",
+    "preversion": "yarn lint",
+    "kkversion": "yarn format && git add -A src",
+    "kkpostversion": "git push && git push --tags",
+    "clean": "shx rm -rf lib/*",
+    "kktest": "mocha --ui qunit",
+    "testall": "mocha --ui qunit dist/sample/test",
+    "rebuild": "electron-rebuild -f -w better-sqlite3 -v 9.0.5",
+    "push": "yarn build && yalc push"
+  },
+  "peerDependencies": {
+    "@gravatar/js": "*",
+    "react": "*"
+  },
+  "devDependencies": {
+    "@gravatar/js": "file:.yalc/@gravatar/core",
+    "@types/react": "16.8.24",
+    "react": "^16.13.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "react",
+    "sqlite",
+    "sync",
+    "firestore"
+  ],
+  "author": "Ameen Rashad <ameenrashad@hotmail.com>",
+  "homepage": "https://github.com/vazra/gravatar#readme",
+  "license": "MIT",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vazra/gravatar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vazra/gravatar/issues"
+  }
+}
