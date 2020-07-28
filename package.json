@@ -42,7 +42,10 @@
     "@commitlint/config-conventional": "9.0.1",
     "husky": "4.2.5",
     "cross-env": "7.0.2",
-    "rimraf": "3.0.2"
+    "rimraf": "3.0.2",
+    "tslib": "^2.0.0",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0"
   },
   "husky": {
     "hooks": {
