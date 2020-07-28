@@ -1,7 +1,7 @@
 {
   "name": "@gravatar/react",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "description": "React Component ",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
@@ -27,7 +27,6 @@
     "react": "*"
   },
   "devDependencies": {
-    "@gravatar/js": "file:.yalc/@gravatar/core",
     "@types/react": "16.8.24",
     "react": "^16.13.1"
   },
